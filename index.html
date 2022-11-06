@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的纯静态网站</title>
+</head>
+<body>
+    <!-- 展示型标签 -->
+    <div>这是我写的第一句话</div>
+    <div>这是我的第二句话</div>
+    <!-- 交互型标签 -->
+    <button>点击按钮</button>
+    <!-- 输入框 -->
+    <input />
+
+    <!-- 选择文件 -->
+    <input type="file"/>
+
+    <!-- 一块输入区域 -->
+    <textarea></textarea>
+
+    <!-- 分类选择 -->
+    <select>
+       <option value="学生">学生</option>
+       <option value="老师">老师</option>
+    </select>
+
+    <!-- 多选 -->
+    <div>
+        <input type="checkbox" id="boy"  name="sex" />
+        <label for="boy">男</label>
+        <input type="checkbox" id="girl" name="sex" />
+        <label for="girl">女</label>
+    </div>
+
+    <!-- 单选 -->
+    <div>
+        <!-- radio标签组的形成，需要所有的radio类型的input name值相同 -->
+        <input type="radio" id="boy" name="sex" value="boy" />
+        <label for="boy">男</label>
+        <input type="radio" id="girl" name="sex" value="girl" />
+        <label for="girl">女</label>
+    </div>
+
+    <!-- password形式的输入均为"."" -->
+    <input type="password" />
+
+    <!-- 引用图片 -->
+    <!-- src当中可以写相对路径或者觉得的网络路径 -->
+    <!-- 第一种地址为保存到本地的地址 --><img src="./img/paris.jpg" />
+    <!-- 第二种为外部地址 --><img src="https://pic.leetcode-cn.com/1661602838-mnmhWP-20220827-202027.png"/>
+
+    
+</body>
+</html>
