@@ -1,0 +1,10 @@
+$global-color:yellow;//设置全局变量
+
+%border-style{//定义被继承的样式
+    border: 2px solid red;
+}
+@mixin font-style {//设置混合器的值
+    font-size: 20px;
+    color: hotpink;
+    
+}
