@@ -9,39 +9,76 @@ const arr3 = [{ name: 'pjw' }, { name: 'xty' }, { name: '哈哈哈' }]
 // stack.push(2)
 // const stackToEle = stack.pop()
 // console.log(stack, stackToEle, stack.length)
-const Stack = {
-    capacity: [],
-    size: function () {
+
+
+const obj=[];
+obj.unshift();
+console.log(obj)
+obj.push(2);
+obj.unshift(1)
+console.log(obj)
+obj.pop()
+console.log(obj)
+
+//栈
+const chi =  {
+    capacity:[],
+    size : function () {
         return this.capacity.length;
     },
+
     push: function (item) {
-        this.capacity.push(item)
+        this.capacity.push(item);
     },
-    pop: function () {
-        return this.capacity.pop()
+    pop : function () {
+        return this.capacity.pop();
     }
 }
+chi.push(1);
+chi.push(2);
+console.log(chi.capacity,chi.size());
+chi.pop();
+console.log(chi.capacity,chi.size())
+ 
 
-console.log(Stack.capacity, Stack.pop(), Stack.size())
-
-
-// 队列
-const Queue = {
-    capacity: [],
-    size: function() {
+//队列:左进右出
+const he = {
+    capacity :[],
+    size : function (){
         return this.capacity.length;
     },
-    add(item) {
-        // 从左边进入队列
-        this.capacity.unshift(item)
+    
+    add : function (item) {
+        this.capacity.unshift(item);
     },
-    remove() {
+
+    remove : function () {
         return this.capacity.pop();
     }
 }
 
-Queue.add(1)
-Queue.add(2)
-Queue.add(3)
+he.add(1)
+he.add(2)
+he.add(3)
+console.log(he.capacity,he.size())
+console.log(he.remove())
 
-console.log(Queue.remove(), Queue.size(), Queue.capacity)
+//队列：右进左出
+const la = {
+    capacity :[],
+    size : function () {
+        return this.capacity.length;
+    },
+    add : function (item) {
+        this.capacity.push(item);
+    },
+    remove : function () {
+        return this.capacity.shift();
+    }
+}
+
+la.add(1)
+la.add(2)
+console.log(la.capacity,la.size())
+console.log(la.remove())
+console.log(la.capacity)
