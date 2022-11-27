@@ -3,6 +3,9 @@
 
 
 
+
+
+
 // 1. 全局声明的函数中的this，默认指向global
 function getGlobal() {
     console.log(this)
