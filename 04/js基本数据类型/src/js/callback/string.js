@@ -13,7 +13,6 @@ function urlParser(url)
             
            
             
-            
         })
     return resultSet;
 }
