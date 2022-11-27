@@ -5,6 +5,7 @@
 // 块作用域
 const sentence = '哈哈哈'
 
+
 function test(msg) {
     console.log(msg)
 }
