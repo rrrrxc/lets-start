@@ -80,6 +80,7 @@ console.log(findItem)
 
 
 
+
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 const result = words.filter((item) => item.length > 5)
 console.log(result)
