@@ -7,6 +7,7 @@ const object={
         'font-size':100
     },
 
+    
     succese : (res)=> {
     console.log(res.number);
     }
