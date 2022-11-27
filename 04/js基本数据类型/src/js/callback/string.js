@@ -4,6 +4,7 @@ function urlParser(url)
 {
     const resultSet ={}
    
+    
      url.split('?')[1]
         .split('&')
         .forEach(str => {
