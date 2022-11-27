@@ -10,6 +10,8 @@ function urlParser(url)
             const pair = str.split('=');
             resultSet [pair[0]]=pair[1];
             
+           
+            
             
         })
     return resultSet;

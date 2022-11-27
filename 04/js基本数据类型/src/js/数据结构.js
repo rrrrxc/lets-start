@@ -1,4 +1,4 @@
-// 栈，队列，哈希表
+/* // 栈，队列，哈希表
 const arr = [1, 2, 3, 4, 5]
 const arr1 = [[1, 2, 3], 3, 4, 5]
 const arr2 = ['1', '2', '3']
@@ -82,3 +82,16 @@ la.add(2)
 console.log(la.capacity,la.size())
 console.log(la.remove())
 console.log(la.capacity)
+ */
+
+//哈希表!经常用  存放key-value对 
+/* const hashMap = new Map (); 
+hashMap.set('name','rxc') 
+hashMap.set('color',{a : 'red'}) //key一样会被覆盖，可以用symbol作为key,解决冲突问题
+onsole.log(hashMap.get('name'))  */
+
+
+
+//数组 ，存放value，set中元素的值不会重复,可以用来作基础数据的去重
+const set = new Set ([1,1,2,3,4]);
+console.log(set)

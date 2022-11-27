@@ -76,7 +76,8 @@ const name = 'drum'
 const findItem = myFish.findIndex((item) => item === name)
 
 console.log(findItem)
-v
+
+
 
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 const result = words.filter((item) => item.length > 5)
