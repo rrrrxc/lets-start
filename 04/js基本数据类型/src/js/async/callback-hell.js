@@ -6,7 +6,7 @@ request((res) => {
         // TODO: handle
         request((res) => {
             //TODO: handle
-            ...request()
+            request()
         })
     })
 })
