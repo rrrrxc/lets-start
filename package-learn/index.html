@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <input id="input"/>
+    <button id="button">小demo</button>
+    <div id="text"></div>
+    <script>
+        // 跨域问题
+        const username = 'rxc'
+        const password = '123456'
+        async function main() {
+            const result = await axios.get(`http://jisutqybmf.market.alicloudapi.com/weather/query`, {
+                headers: {
+                    Authorization: 'APPCODE d37b3e8a44534d81b5b1d2db1579b11d'
+                },
+                params: {
+                    city: getCityName()
+                }
+            })
+            console.log(result.data.result.weather)
+            // 设置一下前端的内容
+            setTextToDiv(JSON.stringify(result.data.result))
+        }
+        // main()
+    
+        // 显示天气
+        function setTextToDiv(text) {
+            const element = document.getElementById('text')
+            element.innerHTML = text;
+        }
+
+        // 获取城市信息
+        function getCityName() {
+            const input = document.getElementById('input')
+            console.log(input.value)
+            return input.value;
+        }
+
+        // 当点击button按钮的时候，调用main函数
+        const button = document.getElementById('button')
+        button.addEventListener('click', () => {
+            main()
+        })
+    </script>
+</body>
+
+</html>
