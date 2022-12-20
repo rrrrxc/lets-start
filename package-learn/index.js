@@ -19,7 +19,7 @@ const password = '123456'
 async function main() {
     const result = await http.get(`http://localhost:8080/user`, {
         headers: {
-            pjw: 'rxc'
+            rxc: 'rxc'
         },
         query: {
             password,
