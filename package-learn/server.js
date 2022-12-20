@@ -9,6 +9,7 @@ const requestListener = function (req, res) {
     console.log(req.url)
     console.log(req.headers)
     if (req.method === 'OPTIONS') {
+   
         res.writeHead(204);
         res.end()
         return;
