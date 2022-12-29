@@ -28,7 +28,7 @@ github地址：[https://github.com/rrrrxc](https://github.com/rrrrxc)
 | 9 | babel |  |  |
 | 10 | HTTP协议 |  |  |
 | 11 | typescript |  |  |
-| 12 | 框架演进&vue入门&vue组件 |  |  |
+| 12 | 框架演进&vue入门&vue组件 |https://github.com/rrrrxc/hello-vue.git  |  |
 | 13 | vue组件数据流 |  |  |
 | 14 | 路由 |  |  |
 | 15 | 事件总线，依赖注入，store状态管理，内置组件 |  |  |
